@@ -7,3 +7,39 @@
 
 <h1><a href="https://www.linkedin.com/company/42services" target="_blank"><img style="width: 800px; height: 800px; display: block; margin-left: auto; margin-right: auto;" src="https://github.com/42services/public/blob/main/42services.png?raw=true" alt="" /></a></h1>
 <h2 style="text-align: center;">Need help? Contact me on <a href="mailto:info@42services.com">info@42services.com</a></h2>
+<h4 style="position: absolute; bottom: 0; left: 0; width: 100%; text-align: center;color: orange;style: italic"><div id="quote"></div></h4>
+
+    <script>
+        // Lijst van quotes uit "The Hitchhiker's Guide to the Galaxy"
+        var quotes = [
+			"“My capacity for happiness...you could fit into a matchbox without taking out the matches first”",
+			"“Here, for whatever reason, is the world. And here it stays. With me on it”",
+			"“Reality is frequently inaccurate”",
+			"“Don't Panic”",
+			"“Time is an illusion. Lunchtime doubly so”",
+			"“I'd far rather be happy than right any day”",
+            "“So long, and thanks for all the fish“",
+			"“The answer to the great question...of Life, the Universe and Everything...is...forty-two”",
+			"“Space is big. Really big. You just won't believe how vastly, hugely, mind-bogglingly big it is. I mean, you may think it's a long way down the road to the chemist's, but that's just peanuts to space.”",
+            "“So once you do know what the question actually is, you'll know what the answer means”",
+			"“I don’t know what I’m looking for... I think it might be because if I knew I wouldn’t be able to look for them”",
+			"“For a moment, nothing happened. Then, after a second or so, nothing continued to happen”",
+			"“Life, the Universe and Everything”",
+            "“42 is the answer to life, the universe and everything”",
+            "“I never could get the hang of Thursdays”"
+        ];
+
+        function displayRandomQuote() {
+            // Kies een willekeurige quote en toon deze in de div met id 'quote'
+            var randomQuote = quotes[Math.floor(Math.random() * quotes.length)];
+            document.getElementById('quote').textContent = randomQuote;
+        }
+
+        // Roep displayRandomQuote() aan wanneer de pagina laadt
+        window.onload = displayRandomQuote;
+
+        // Verander de quote elke 5 seconden
+        setInterval(displayRandomQuote, 10000);
+    </script>
+	
+	</body>
